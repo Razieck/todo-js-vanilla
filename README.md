@@ -1,30 +1,25 @@
 # 📝 Todo JS Vanilla · Lista de Tareas
 
-Aplicación minimalista de lista de tareas construida con **HTML, CSS y JavaScript Vanilla**.  
-Pensada para practicar manipulación del DOM, eventos y persistencia con `localStorage`.  
-Ideal como base para talleres, demos o proyectos educativos.
+Aplicación minimalista creada con **HTML, CSS y JavaScript Vanilla** para practicar DOM, eventos y persistencia con `localStorage`. Ideal como demo, taller o proyecto base.
 
-Minimalist to-do list app built with **HTML, CSS, and Vanilla JavaScript**.  
-Designed to practice DOM manipulation, event handling, and `localStorage` persistence.  
-Perfect starter project for workshops, demos, or hands-on practice.
+Minimalist to-do app built with **HTML, CSS, and Vanilla JS**, perfect for mastering DOM manipulation, event handling, and `localStorage` persistence.
 
 ---
 
 ## 📌 Características Clave · Key Features
 
-- ✨ Agregar nuevas tareas · Add new tasks
-- ✅ Marcar tareas como completadas · Mark tasks as done
-- 🗑️ Eliminar tareas individuales, completadas o todas · Remove single, completed, or all tasks
-- 📊 Estadísticas en tiempo real · Real-time task stats
-- 💾 Persistencia con `localStorage` · `localStorage` persistence
-- 🌓 Interfaz limpia y responsiva · Clean, responsive UI
+- ✨ Agrega nuevas tareas · Add new tasks
+- ✅ Marca tareas completadas · Toggle completion
+- 🗑️ Elimina individuales, completadas o todas · Remove single/completed/all
+- 📊 Estadísticas en tiempo real · Real-time counters
+- 💾 Datos persistentes con `localStorage`
+- 🌓 UI moderna y responsiva · Responsive UI
 
 ---
 
 ## 🚀 Demo
 
-🔗 [Ver aplicación en línea / Live demo](https://tu-enlace-deploy.com)  
-*(Actualiza el enlace cuando publiques en GitHub Pages, Vercel u otra plataforma.)*
+🔗 [Ver aplicación en línea / Live demo](https://razieck.github.io/todo-js-vanilla/)
 
 ---
 
@@ -36,11 +31,11 @@ Perfect starter project for workshops, demos, or hands-on practice.
    ```bash
    git clone https://github.com/Razieck/todo-js-vanilla.git
    ```
-2. Entra en la carpeta del proyecto  
+2. Ingresa a la carpeta  
    ```bash
    cd todo-js-vanilla
    ```
-3. Abre `index.html` en tu navegador o usa Live Server.
+3. Abre `index.html` en el navegador o usa Live Server.
 
 ### English 🇺🇸
 
@@ -48,39 +43,38 @@ Perfect starter project for workshops, demos, or hands-on practice.
    ```bash
    git clone https://github.com/Razieck/todo-js-vanilla.git
    ```
-2. Move into the project folder  
+2. Move into the folder  
    ```bash
    cd todo-js-vanilla
    ```
-3. Open `index.html` in your browser or serve it via Live Server.
+3. Open `index.html` in your browser or via Live Server.
 
 ---
 
 ## 🧱 Estructura · Project Structure
 
-- `index.html` · estructura base / HTML scaffold
-- `style.css` · estilos principales / styling
-- `app.js` · lógica de la aplicación / app logic
+- `index.html` · esqueleto principal / scaffold
+- `style.css` · estilos del layout / styling
+- `app.js` · lógica y estado / logic & state
 
 ---
 
-## 🧪 Próximos pasos · Suggested Enhancements
+## 🧪 Ideas de mejora · Enhancements
 
-- Añadir tests con Playwright o Cypress · Add e2e tests
-- Implementar modo oscuro/claro · Implement dark/light themes
-- Incluir animaciones suaves · Add subtle animations
-- Desplegar en GitHub Pages o Vercel · Deploy to GitHub Pages or Vercel
+- Modo oscuro/claro · Dark/light theme
+- Filtros (todas / activas / completadas)
+- Animaciones y microinteracciones
+- Tests E2E con Playwright o Cypress
 
 ---
 
 ## 🤝 Contribuciones · Contributing
 
-¿Quieres mejorar el proyecto? Crea un fork, abre un issue o envía un PR.  
-Looking to improve it? Fork the repo, open an issue, or submit a PR.
+¿Te gustaría colaborar? Abre un issue o envía un pull request.  
+Want to contribute? Open an issue or submit a PR.
 
 ---
 
 ## 📄 Licencia · License
 
-Este proyecto se distribuye bajo la licencia MIT.  
-This project is released under the MIT License.
+MIT License.
