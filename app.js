@@ -63,8 +63,8 @@ const state = {
     updateStats();
   }
   
-  function removeTask(id) {
-    state.tasks = state.tasks.filter(t => t.id !== id);
+  function deleteTask(index) {
+    state.tasks.splice(index, 1);
     persist();
     render();
     updateStats();
@@ -74,7 +74,7 @@ const state = {
   function render() {
     list.innerHTML = '';
     const fragment = document.createDocumentFragment();
-    state.tasks.forEach(task => {
+    state.tasks.forEach((task, index) => {
       const li = document.createElement('li');
       li.className = `item ${task.completed ? 'completed' : ''}`;
   
@@ -93,7 +93,7 @@ const state = {
       const removeBtn = document.createElement('button');
       removeBtn.className = 'remove';
       removeBtn.textContent = 'Eliminar';
-      removeBtn.addEventListener('click', () => removeTask(task.id));
+      removeBtn.addEventListener('click', () => deleteTask(index));
   
       actions.appendChild(removeBtn);
   
