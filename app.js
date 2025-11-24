@@ -27,7 +27,7 @@ const state = {
   
   clearCompletedBtn.addEventListener('click', () => {
     state.tasks = state.tasks.filter(t => !t.completed);
-    persist();
+    saveTasks(state.tasks);
     render();
     updateStats();
   });
@@ -35,7 +35,7 @@ const state = {
   clearAllBtn.addEventListener('click', () => {
     if (!confirm('¿Eliminar todas las tareas?')) return;
     state.tasks = [];
-    persist();
+    saveTasks(state.tasks);
     render();
     updateStats();
   });
@@ -49,7 +49,7 @@ const state = {
       createdAt: Date.now()
     };
     state.tasks.push(task);
-    persist();
+    saveTasks(state.tasks);
     render();
     updateStats();
   }
@@ -58,7 +58,7 @@ const state = {
     const task = state.tasks.find(t => t.id === id);
     if (!task) return;
     task.completed = !task.completed;
-    persist();
+    saveTasks(state.tasks);
     render();
     updateStats();
   }
@@ -113,15 +113,11 @@ const state = {
   }
   
   // Persistencia en LocalStorage
-  function persist() {
-    localStorage.setItem('tasks', JSON.stringify(state.tasks));
+  function saveTasks(tasks) {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
   }
   
   function loadTasks() {
-    try {
-      const raw = localStorage.getItem('tasks');
-      return raw ? JSON.parse(raw) : [];
-    } catch {
-      return [];
-    }
+    const stored = localStorage.getItem('tasks');
+    return stored ? JSON.parse(stored) : [];
   }
